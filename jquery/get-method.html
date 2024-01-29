@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get/set method()</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#btn1").click(function()
+            {
+                alert("text : "+$("#test").text());
+            });
+            $("#btn2").click(function()
+            {
+                alert("html : "+$("#test").html());
+            });
+            $("#btn3").click(function()
+            {
+                alert("value : "+$("#test1").val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="test">This is Get-set method<b> jquery </b>example</p>
+    <p>Name : <input type="text" id="test1" value="Hello jquery ! ..."></p>
+    <button id="btn1">show text</button>
+    <button id="btn2">show html</button>
+    <button id="btn3">show value</button>
+</body>
+</html>

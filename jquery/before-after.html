@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After method of insert</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#container").after("<p> The end </p>");
+            $("#container").before("<p>jquery</p>");
+            $("button.insert-after").click(function()
+            {
+                $("h1").after("End");
+            });
+            $("button.insert-before").click(function()
+            {
+                $("h1").before("Start");
+            });
+        });
+    </script>
+    <style>
+        h1{
+            display: inline-block;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery Manipulation</h1>
+    <hr>
+    <button type="button" class="insert-before">Insert Before</button>
+    <button type="button" class="insert-after">Insert After</button>
+    <hr>
+    <div id="container">
+        <p>jquery is lightweight, writeless, do more",javascript library.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, vero est ratione nulla possimus iure vel ullam, architecto neque alias sapiente voluptate quibusdam velit, quae aliquam rerum laborum vitae doloribus?</p>
+    </div>
+</body>
+</html>

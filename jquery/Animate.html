@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#mydiv").animate({
+                height:"300px",
+                width: "300px"
+            });
+        });
+    </script>
+    <style>
+        .reddiv{
+           background-image: url(pexels-arshad-sutar-1749303.jpg);
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            margin: auto;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Example of jquery Animate() method</h1><br><br>
+    <div id="mydiv" class="reddiv"></div>
+</body>
+</html>

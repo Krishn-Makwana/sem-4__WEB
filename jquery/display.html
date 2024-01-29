@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of display</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        p {
+            padding: 10px 50px;
+            background: rgb(78, 59, 63);
+            text-align: justify;
+            color: aliceblue;
+            font-size: 25px;
+            line-height: 50px;
+        
+        }
+
+        .btn {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .bn {
+            margin: 30px;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+
+        .bn:hover {
+            background: rgb(78, 59, 63);
+            color: beige;
+        }
+
+        .container {
+            margin: 0px 100px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("p").show();
+            });
+            $(".btn2").click(function () {
+                $("p").hide();
+            });
+            $(".btn3").click(function () {
+                $("p").toggle();
+            });
+            
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn">
+            <button type="button" class="btn1 bn">show</button>
+            <button type="button" class="btn2 bn">hide</button>
+            <button type="button" class="btn3 bn">toggle</button>
+        
+        </div>
+        <p class="partial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates magni maiores quae eveniet quaerat
+            animi, dolor minus quam laboriosam aliquid qui laborum deserunt reprehenderit, illo quis cumque id
+            temporibus.</p>
+       
+    </div>
+
+
+
+</body>
+
+</html>

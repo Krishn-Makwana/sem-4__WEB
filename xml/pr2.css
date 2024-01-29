@@ -1,0 +1,10 @@
+student{
+    background-color: pink;
+}
+firstname,lastname,email{
+    font-size: 25px;
+    display: block;
+    color: blue;
+   text-align: center;
+    
+}
